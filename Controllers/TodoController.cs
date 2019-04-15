@@ -38,7 +38,7 @@ namespace TodoApi.Controllers
         {
             var todoItem = await _context.TodoItems.FindAsync(id);
 
-            if(GetTodoItem == null)
+            if(todoItem == null)
             {
                 return NotFound();
             }
